@@ -1,4 +1,4 @@
-# Helping Women Cope with Depression and Anxiety
+# Managing Depression and Anxiety
 
 ## Table of Contents
 - [Introduction to the Problem](#intro)
@@ -10,7 +10,7 @@
 
 ## Introduction to the Problem
 
-Depression in women is very common. In fact, women are twice as likely to develop clinical depression as men. Up to one in four women is likely to have an episode of major depression at some point in life. Depression in women can occur at any age.
+Depression is very common. Women are twice as likely to develop clinical depression as men. Up to one in four women is likely to have an episode of major depression at some point in life. Depression in women can occur at any age.
 ### What is Depression?
 
 Depression is a common and serious medical illness that negatively affects how you feel, the way you think and how you act. It can lead to a variety of emotional and physical problems and can decrease a person’s ability to function at work and at home.
@@ -78,7 +78,7 @@ Enter location and find nearest mental health centers and specialist.
 
 Fork the repository on your system:
 ```
-git clone git@github.com:tulikavijay/CBT-therapy.git
+git clone git@github.com:remmysean/CBT-therapy.git
 ```
 Check the repository and branch for local development
 ```
@@ -108,25 +108,7 @@ python manage.py runserver
 <a name="demo"/>
 
 ### Live demo : [CBT-therapy](https://nameless-island-79297.herokuapp.com/)
-Note : The live demo hasn't been updated in a year.
+
 </a>
-
-### Docker
-
-The web application can be run within docker using [docker-compose](https://docs.docker.com/install/overview/).
-
-To build and run the application:
-
-```
-docker-compose up -- build
-```
-
-Run the following commands in another terminal (once the application is running) to collect static files and import initial data into the application:
-
-```
-docker-compose run service python manage.py collectstatic
-docker-compose run service python manage.py loaddata therapist.json
-docker-compose run service python manage.py loaddata drawing_challenges.json
-```
 
 * Access at http://localhost:8000/
